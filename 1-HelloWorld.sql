@@ -1,0 +1,5 @@
+DECLARE
+    MESAJ VARCHAR2(100) := 'Bu ilk PL/SQL Programým. Merhaaba Dünya';
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(MESAJ);
+END;
