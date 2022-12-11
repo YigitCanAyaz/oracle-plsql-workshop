@@ -1,0 +1,12 @@
+-- %ROWTYPE
+
+desc EMP;
+
+declare
+    V_EMP EMP%ROWTYPE; -- EMP TABLOSUNDAKÝ BÜTÜN COLONLARI ÝÇERÝR
+begin
+    SELECT * INTO V_EMP FROM EMP WHERE ROWNUM = 1;
+    
+    DBMS_OUTPUT.PUT_LINE('EMPNO = ' || V_EMP.EMPNO || ' ENAME = '
+    || V_EMP.ENAME || ' SAL = ' || V_EMP.SAL);
+end;
