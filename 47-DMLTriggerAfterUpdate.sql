@@ -1,6 +1,6 @@
 -- after trigger (after update)
 -- emp tablosundaki herhangi bir kayit update edildiignde baska bir tabloya emp tablosu update edilid
--- bilgisini, update eden kiþi ve zaman bilgisini kaydetsin
+-- bilgisini, update eden kisi ve zaman bilgisini kaydetsin
 
 create table emp_log2 (
     islem varchar2(250),
@@ -28,4 +28,4 @@ end;
 
 update emp set comm = nvl(comm, 0) + 3000 where empno = 7788; 
 
-select * from emp_log2 -- wempno => hangi empnumaralý deðiþti
+select * from emp_log2 -- wempno => hangi empnumarali degisti
